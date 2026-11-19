@@ -2,6 +2,13 @@
 
 > **High-level declarative UI component blueprints, option configurations, and assembly contracts for JSON-to-DOM compilers.**
 
+---
+[![LIVE DOCS](https://img.shields.io/badge/LIVE-DOCUMENTATION-blue?style=for-the-badge)](https://keshavsoft.github.io/declarative-definitions/)
+[![NPM](https://img.shields.io/badge/NPM-PACKAGE-CB3837?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/declarative-definitions)
+[![GITHUB](https://img.shields.io/badge/GITHUB-REPOSITORY-181717?style=for-the-badge&logo=github)](https://github.com/keshavsoft/declarative-definitions)
+
+---
+
 Part of the **KeshavSoft Declarative UI Architecture** (Tier 4: Component Blueprints & Options).
 
 ---
