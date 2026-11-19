@@ -162,5 +162,14 @@ var e = {
 			options: {}
 		}
 	}
-}, t = e;
-export { t as default, e as definitions };
+}, t = {
+	name: "declarative-definitions",
+	version: "1.0.1"
+}, n = (e) => {
+	typeof globalThis < "u" && (globalThis.ks ??= {}, globalThis.ks.declarative ??= {}, globalThis.ks.declarative.definitions = {
+		meta: t,
+		data: e
+	});
+}, r = e;
+n(e);
+export { r as default, e as definitions, t as meta };

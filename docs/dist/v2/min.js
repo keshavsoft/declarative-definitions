@@ -1,0 +1,175 @@
+var e = {
+	table: {
+		headerOnly: {
+			baseFromSpec: "tableHeaderOnly",
+			instructions: ["buildColgroup", "buildHeader"],
+			options: {
+				search: {
+					initialize: "searchFrame",
+					showLabel: "searchLabel",
+					showHelper: "searchHelper",
+					showInput: "searchInput"
+				},
+				serial: { initialize: "serialRoot" }
+			}
+		},
+		simple: {
+			baseFromSpec: "tableSimple",
+			instructions: [
+				"buildColgroup",
+				"buildHeader",
+				"buildBody"
+			],
+			options: {
+				search: {
+					initialize: "searchFrame",
+					showLabel: "searchLabel",
+					showHelper: "searchHelper",
+					showInput: "searchInput"
+				},
+				serial: {
+					initialize: "serialRoot",
+					showSerial: "serialChild"
+				},
+				options: {
+					showButton: "optionsShowButton",
+					showEditButton: "optionsEditButton",
+					showDeleteButton: "optionsDeleteButton"
+				}
+			}
+		},
+		withFooter: {
+			baseFromSpec: "tableWithFooter",
+			instructions: [
+				"buildColgroup",
+				"buildHeader",
+				"buildFooter",
+				"buildBody"
+			],
+			options: {
+				search: {
+					initialize: "searchFrame",
+					showLabel: "searchLabel",
+					showHelper: "searchHelper",
+					showInput: "searchInput"
+				},
+				serial: {
+					initialize: "serialRoot",
+					showSerial: "serialChild"
+				},
+				options: {
+					showButton: "optionsShowButton",
+					showEditButton: "optionsEditButton",
+					showDeleteButton: "optionsDeleteButton"
+				}
+			}
+		},
+		bodyOnly: {
+			baseFromSpec: "tableBodyOnly",
+			instructions: ["buildBody"],
+			options: { serial: { showSerial: "serialChild" } }
+		}
+	},
+	select: { simple: {
+		baseFromSpec: "selectBase",
+		instructions: ["buildSelectWithOptions"],
+		options: {}
+	} },
+	dataList: { simple: {
+		baseFromSpec: "dataListSimple",
+		instructions: ["buildDataListWithOptions"],
+		options: {}
+	} },
+	selectOptionsOnly: { simple: {
+		baseFromSpec: "selectOptionsOnlyBase",
+		instructions: ["buildOptionsArray"],
+		options: {}
+	} },
+	searchInput: { simple: {
+		baseFromSpec: "searchInputBase",
+		instructions: [],
+		options: {}
+	} },
+	form: { simple: {
+		baseFromSpec: "formSimple",
+		instructions: ["buildFormField"],
+		options: {}
+	} },
+	accordion: {
+		simple: {
+			baseFromSpec: "accordionSimple",
+			instructions: ["buildAccordionItems"],
+			options: {}
+		},
+		flush: {
+			baseFromSpec: "accordionFlush",
+			instructions: ["buildAccordionItems"],
+			options: {}
+		}
+	},
+	card: {
+		simple: {
+			baseFromSpec: "cardSimple",
+			instructions: ["buildCardBody"],
+			options: {}
+		},
+		withHeader: {
+			baseFromSpec: "cardWithHeader",
+			instructions: ["buildCardHeader", "buildCardBody"],
+			options: {}
+		},
+		withFooter: {
+			baseFromSpec: "cardWithFooter",
+			instructions: [
+				"buildCardHeader",
+				"buildCardBody",
+				"buildCardFooter"
+			],
+			options: {}
+		},
+		imageTop: {
+			baseFromSpec: "cardImageTop",
+			instructions: ["buildCardBody"],
+			options: {}
+		}
+	},
+	list: {
+		simple: {
+			baseFromSpec: "listSimple",
+			instructions: ["buildListItems"],
+			options: {}
+		},
+		group: {
+			baseFromSpec: "listGroup",
+			instructions: ["buildListGroupItems"],
+			options: {}
+		},
+		ordered: {
+			baseFromSpec: "listOrdered",
+			instructions: ["buildListGroupItems"],
+			options: {}
+		}
+	},
+	menu: {
+		simple: {
+			baseFromSpec: "menuSimple",
+			instructions: ["buildMenuItems"],
+			options: {}
+		},
+		cards: {
+			baseFromSpec: "menuCardsBase",
+			instructions: ["buildMenuCards"],
+			options: {}
+		}
+	}
+}, t = {
+	name: "declarative-definitions",
+	version: "1.0.1"
+}, n = (e) => {
+	typeof globalThis < "u" && (globalThis.ks ??= {}, globalThis.ks.declarative ??= {}, globalThis.ks.declarative.definitions = {
+		meta: t,
+		data: e
+	});
+}, r = e;
+n(e);
+export { r as default, e as definitions, t as meta };
