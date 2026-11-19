@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Story of V5 — Minimalist Developer Studio</title>
+  <link rel="stylesheet" href="../../story.css">
+  <style>
+    .studio-preview-box {
+      background: #08111f;
+      border: 1px solid #263750;
+      border-radius: 14px;
+      padding: 24px;
+      margin: 28px 0;
+      color: #e5edf8;
+    }
+    .preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #263750;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      font-size: 13px;
+      font-family: monospace;
+      color: #38bdf8;
+    }
+    .mini-grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 16px;
+      background: #111e31;
+      border-radius: 8px;
+      padding: 16px;
+      border: 1px solid #1f2d42;
+    }
+    .mock-select {
+      background: #0d1726;
+      border: 1px solid #2a3d58;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 11px;
+      color: #8fa5c4;
+      margin-bottom: 10px;
+    }
+    .mock-editor {
+      background: #070d18;
+      border-radius: 6px;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 12px;
+      color: #a5b4fc;
+      line-height: 1.5;
+    }
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .feature-item {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .feature-item h3 {
+      font-size: 16px;
+      margin: 0 0 8px 0;
+      color: var(--green);
+    }
+    .feature-item p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="topin">
+      <a class="brand" href="../../index.html">KeshavSoft <span>/ definitions</span></a>
+      <nav class="toplinks">
+        <a href="../index.html">← All Monaco Versions</a>
+        <a href="./index.html" class="highlight">Open V5 Studio ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" style="padding-bottom: 10px;">
+      <span class="hero-note">Studio Architecture Brief</span>
+      <div class="eyebrow" style="margin-top:24px">declarative-definitions · Monaco V5</div>
+      <h1>Zero Storyboards.<br><span class="highlight">Pure Developer Instrument.</span></h1>
+      <p class="lead">V5 is designed for the developer in production flow. While earlier versions guided users through pedagogical chapters and explanatory story cards, V5 cuts straight to the core: instant 3-tier cascade filtering and a responsive Monaco canvas.</p>
+      
+      <div class="actions">
+        <a class="btn" href="./index.html">Launch V5 Studio Now →</a>
+        <a class="btn secondary" href="../index.html">Compare Other Versions</a>
+      </div>
+    </section>
+
+    <!-- Visual Architecture Representation -->
+    <div class="studio-preview-box">
+      <div class="preview-header">
+        <span>V5 Studio Layout Diagram</span>
+        <span>Minimalist 2-Column Split</span>
+      </div>
+      <div class="mini-grid">
+        <div>
+          <div style="font-size: 11px; text-transform: uppercase; color: #8fa5c4; font-weight: 700; margin-bottom: 8px;">3-Tier Selector</div>
+          <div class="mock-select">01 · Control (e.g. table)</div>
+          <div class="mock-select">02 · Variation (e.g. simple)</div>
+          <div class="mock-select">03 · Contract (e.g. options)</div>
+          <div class="mock-select" style="text-align: center; color: #38bdf8; font-weight: 600;">Show all</div>
+        </div>
+        <div class="mock-editor">
+          <div><span style="color:#60a5fa">"table"</span>: {</div>
+          <div style="padding-left:14px"><span style="color:#60a5fa">"simple"</span>: {</div>
+          <div style="padding-left:28px"><span style="color:#fcd34d">"baseFromSpec"</span>: <span style="color:#a7f3d0">"tableSimple"</span>,</div>
+          <div style="padding-left:28px"><span style="color:#fcd34d">"instructions"</span>: [ <span style="color:#a7f3d0">"buildHeader"</span>, <span style="color:#a7f3d0">"buildBody"</span> ],</div>
+          <div style="padding-left:28px"><span style="color:#fcd34d">"options"</span>: { ... }</div>
+          <div style="padding-left:14px">}</div>
+          <div>}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Philosophy -->
+    <section class="panel">
+      <div class="eyebrow">Design Philosophy</div>
+      <h2>What makes V5 different?</h2>
+      
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3>1. No Header / Topbar Clutter</h3>
+          <p>Every vertical pixel is preserved. The distracting 64px navigation bar and story banners are completely eliminated.</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>2. Immediate 3-Tier Hierarchy</h3>
+          <p>Instantly drill down: <code>Control Type</code> → <code>Variation</code> → <code>Contract Part</code> (or <code>Show All</code>) with zero latency.</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>3. Modular Component Isolation</h3>
+          <p>Driven by <code>dom-primitive-bindings</code> v8 with strictly decoupled <code>components/left</code>, <code>components/right</code>, and <code>workspace</code> folders.</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>4. Production Module Loader</h3>
+          <p>Direct dynamic ESM import of the live distribution module with fallback resilience, ensuring it always loads the latest blueprints.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="callout">
+      <strong>How to use:</strong> Start with <a href="./index.html"><code>index.html</code></a> in this folder whenever you need to inspect or copy definition JSON keys into your UI pipeline.
+    </div>
+  </main>
+
+  <footer class="footer">
+    KeshavSoft · declarative-definitions · <a href="./index.html">Open V5 Studio</a> · <a href="../index.html">Monaco Hub</a>
+  </footer>
+</body>
+</html>
