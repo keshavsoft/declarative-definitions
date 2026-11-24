@@ -1,6 +1,80 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Story of Definitions</title><link rel="stylesheet" href="./story.css"></head><body>
-<header class="top"><div class="topin"><a class="brand" href="./index.html">KeshavSoft <span>/ definitions</span></a><nav class="toplinks"><a href="./01-the-two-levels.html">The two levels</a><a href="./02-the-common-contract.html">The contract</a><a href="./03-body-only.html">Body only</a><a href="./monaco/v1/index.html">Studio ↗</a></nav></div></header>
-<main class="wrap"><section class="hero"><span class="hero-note">A small story about a big idea</span><div class="eyebrow" style="margin-top:24px">declarative-definitions · V1</div><h1>A control is more than a name.<br><span class="highlight">It is a definition.</span></h1><p class="lead">A table. A select. A form. We know what these controls are. But when we build one, we still need to answer a more useful question: which kind of table, and what should that particular table contain?</p><p class="lead">This is the story of how definitions give that answer in a simple, consistent shape.</p><div class="actions"><a class="btn" href="./01-the-two-levels.html">Begin the story →</a><a class="btn secondary" href="./monaco/v1/index.html">Explore the definitions</a></div></section>
-<section class="panel"><div class="eyebrow">The idea in one glance</div><h2>Three layers. One easy way to read them.</h2><div class="flow"><div class="step"><span class="num">01 · CONTROL</span><b>table</b><span class="muted small">What kind of control?</span></div><div class="arrow">→</div><div class="step"><span class="num">02 · VARIATION</span><b>bodyOnly</b><span class="muted small">Which form of that control?</span></div><div class="arrow">→</div><div class="step"><span class="num">03 · CONTRACT</span><b>baseFromSpec<br>instructions<br>options</b><span class="muted small">What describes this variation?</span></div></div><p class="muted">The first layer names the control. The second names a particular variation. Every variation then follows the same third-layer contract.</p></section>
-<section><div class="eyebrow">Follow the chapters</div><h2>One idea at a time.</h2><div class="grid"><a class="tile" href="./01-the-two-levels.html"><span class="num">CHAPTER 01</span><h3>Two levels of meaning</h3><p>First choose the control. Then choose its variation.</p></a><a class="tile" href="./02-the-common-contract.html"><span class="num">CHAPTER 02</span><h3>One common contract</h3><p>Meet the three keys every definition shares.</p></a><a class="tile" href="./03-body-only.html"><span class="num">CHAPTER 03</span><h3>Follow bodyOnly</h3><p>Read one real definition without getting lost.</p></a></div><div class="grid" style="margin-top:14px"><a class="tile" href="./04-reading-a-definition.html"><span class="num">CHAPTER 04</span><h3>Read the JSON</h3><p>Learn to read a definition from outside in.</p></a><a class="tile" href="./05-the-definition-library.html"><span class="num">CHAPTER 05</span><h3>The definition library</h3><p>See the actual control families and variations.</p></a><a class="tile" href="./monaco/v1/index.html"><span class="num">EXPLORER</span><h3>Open the studio</h3><p>Explore the definitions in the existing editor.</p></a></div></section>
-<div class="callout"><strong>Keep this thought:</strong> A definition does not try to be the table itself. It describes which starting spec, which instructions, and which options belong to a particular table variation.</div></main><footer class="footer">KeshavSoft · declarative-definitions · <a href="https://github.com/keshavsoft/declarative-definitions">View repository</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>The Story of Definitions</title>
+    <link rel="stylesheet" href="./story.css">
+</head>
+
+<body>
+    <header class="top">
+        <div class="topin"><a class="brand" href="./index.html">KeshavSoft <span>/ definitions</span></a>
+            <nav class="toplinks"><a href="./01-the-two-levels.html">The two levels</a><a
+                    href="./02-the-common-contract.html">The contract</a><a href="./03-body-only.html">Body only</a><a
+                    href="./monaco/index.html">monaco ↗</a></nav>
+        </div>
+    </header>
+    <main class="wrap">
+        <section class="hero"><span class="hero-note">A small story about a big idea</span>
+            <div class="eyebrow" style="margin-top:24px">declarative-definitions · V1</div>
+            <h1>A control is more than a name.<br><span class="highlight">It is a definition.</span></h1>
+            <p class="lead">A table. A select. A form. We know what these controls are. But when we build one, we still
+                need to answer a more useful question: which kind of table, and what should that particular table
+                contain?</p>
+            <p class="lead">This is the story of how definitions give that answer in a simple, consistent shape.</p>
+            <div class="actions"><a class="btn" href="./01-the-two-levels.html">Begin the story →</a><a
+                    class="btn secondary" href="./monaco/v1/index.html">Explore the definitions</a></div>
+        </section>
+        <section class="panel">
+            <div class="eyebrow">The idea in one glance</div>
+            <h2>Three layers. One easy way to read them.</h2>
+            <div class="flow">
+                <div class="step"><span class="num">01 · CONTROL</span><b>table</b><span class="muted small">What kind
+                        of control?</span></div>
+                <div class="arrow">→</div>
+                <div class="step"><span class="num">02 · VARIATION</span><b>bodyOnly</b><span class="muted small">Which
+                        form of that control?</span></div>
+                <div class="arrow">→</div>
+                <div class="step"><span class="num">03 ·
+                        CONTRACT</span><b>baseFromSpec<br>instructions<br>options</b><span class="muted small">What
+                        describes this variation?</span></div>
+            </div>
+            <p class="muted">The first layer names the control. The second names a particular variation. Every variation
+                then follows the same third-layer contract.</p>
+        </section>
+        <section>
+            <div class="eyebrow">Follow the chapters</div>
+            <h2>One idea at a time.</h2>
+            <div class="grid"><a class="tile" href="./01-the-two-levels.html"><span class="num">CHAPTER 01</span>
+                    <h3>Two levels of meaning</h3>
+                    <p>First choose the control. Then choose its variation.</p>
+                </a><a class="tile" href="./02-the-common-contract.html"><span class="num">CHAPTER 02</span>
+                    <h3>One common contract</h3>
+                    <p>Meet the three keys every definition shares.</p>
+                </a><a class="tile" href="./03-body-only.html"><span class="num">CHAPTER 03</span>
+                    <h3>Follow bodyOnly</h3>
+                    <p>Read one real definition without getting lost.</p>
+                </a></div>
+            <div class="grid" style="margin-top:14px"><a class="tile" href="./04-reading-a-definition.html"><span
+                        class="num">CHAPTER 04</span>
+                    <h3>Read the JSON</h3>
+                    <p>Learn to read a definition from outside in.</p>
+                </a><a class="tile" href="./05-the-definition-library.html"><span class="num">CHAPTER 05</span>
+                    <h3>The definition library</h3>
+                    <p>See the actual control families and variations.</p>
+                </a><a class="tile" href="./monaco/v1/index.html"><span class="num">EXPLORER</span>
+                    <h3>Open the studio</h3>
+                    <p>Explore the definitions in the existing editor.</p>
+                </a></div>
+        </section>
+        <div class="callout"><strong>Keep this thought:</strong> A definition does not try to be the table itself. It
+            describes which starting spec, which instructions, and which options belong to a particular table variation.
+        </div>
+    </main>
+    <footer class="footer">KeshavSoft · declarative-definitions · <a
+            href="https://github.com/keshavsoft/declarative-definitions">View repository</a></footer>
+</body>
+
+</html>
