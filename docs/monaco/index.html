@@ -47,6 +47,8 @@
     .badge-v3 { background: #e0e7ff; color: #4338ca; }
     .badge-v4 { background: #fef3c7; color: #b45309; }
     .badge-v5 { background: var(--mint); color: var(--green); border: 1px solid #cce5d1; }
+    .badge-v6 { background: #fce7f3; color: #9d174d; }
+    .badge-v7 { background: #ede9fe; color: #6d28d9; border: 1px solid #c4b5fd; }
 
     .version-card h3 {
       margin: 0 0 10px 0;
@@ -84,7 +86,7 @@
       <a class="brand" href="../index.html">KeshavSoft <span>/ definitions</span></a>
       <nav class="toplinks">
         <a href="../index.html">← Story Home</a>
-        <a href="./v5/index.html" class="highlight">Launch V5 (Latest) ↗</a>
+        <a href="./v7/index.html" class="highlight">Launch V7 (Latest) ↗</a>
       </nav>
     </div>
   </header>
@@ -92,7 +94,7 @@
   <main class="wrap">
     <section class="hero" style="padding-bottom: 10px;">
       <span class="hero-note">Evolution of the Monaco Explorers</span>
-      <div class="eyebrow" style="margin-top:24px">5 Generations · One Shared Mission</div>
+      <div class="eyebrow" style="margin-top:24px">7 Generations · One Shared Mission</div>
       <h1>From Storybook Tours<br><span class="highlight">to Developer Precision.</span></h1>
       <p class="lead">Each version of the Monaco Explorer represents a progressive refinement—starting from guided storytelling walkthroughs and evolving toward an ultra-fast, minimalist developer instrument.</p>
     </section>
@@ -153,7 +155,7 @@
       <!-- V5 -->
       <div class="version-card" style="border-color: #a7f3d0; background: #fbfffc;">
         <div>
-          <span class="version-badge badge-v5">Version 5 · Current</span>
+          <span class="version-badge badge-v5">Version 5</span>
           <h3>V5 · Minimalist Developer Hub</h3>
           <p>Stripped away all marketing headers, story cards, and visual distractions. Retains only the ultra-fast cascaded dropdowns and full-screen Monaco canvas for raw productivity.</p>
         </div>
@@ -165,10 +167,39 @@
           <span class="pill">/monaco/v5/</span>
         </div>
       </div>
-    </div>
+
+      <!-- V6 -->
+      <a class="version-card" href="./v6/index.html">
+        <div>
+          <span class="version-badge badge-v6">Version 6</span>
+          <h3>V6 · Spec Studio</h3>
+          <p>Dual-tab spec explorer: Tab 1 selects a <strong>Spec Element</strong> and <strong>Variation</strong> to inspect <code>spec.json</code> in Monaco, Tab 2 previews the compiled DOM live via <code>BroadcastChannel</code>.</p>
+        </div>
+        <div class="version-footer">
+          <span>Open V6 Studio →</span>
+          <span class="pill">/monaco/v6/</span>
+        </div>
+      </a>
+
+      <!-- V7 -->
+      <div class="version-card" style="border-color: #c4b5fd; background: #faf9ff;">
+        <div>
+          <span class="version-badge badge-v7">Version 7 · Current</span>
+          <h3>V7 · Tier 4 Definitions</h3>
+          <p>Drills into <code>definitions.json</code> — pure <code>baseFromSpec</code> + <code>instructions</code>. Select a <strong>Control Type</strong> and <strong>Variation</strong> in Tab 1; Tab 2 renders mutations live via <code>json-renderers-run-instructions</code>.</p>
+        </div>
+        <div class="version-footer" style="display: flex; gap: 10px; align-items: center; justify-content: space-between;">
+          <div style="display: flex; gap: 14px;">
+            <a href="./v7/index.html" style="font-weight: 800; color: #6d28d9;">Launch Studio →</a>
+          </div>
+          <span class="pill">/monaco/v7/</span>
+        </div>
+      </div>
+
+    </div><!-- /version-grid -->
 
     <div class="callout" style="margin-top: 40px;">
-      <strong>Architectural Takeaway:</strong> Whether you prefer the narrative guidance of <strong>V3</strong> or the no-nonsense speed of <strong>V5</strong>, all versions read from the exact same single source of truth: our declarative definitions blueprint.
+      <strong>Architectural Takeaway:</strong> Whether you prefer the narrative guidance of <strong>V3</strong>, the no-nonsense speed of <strong>V5</strong>, or the dual-tab live rendering of <strong>V7</strong>, all versions read from the exact same single source of truth: our declarative definitions blueprint.
     </div>
   </main>
 
